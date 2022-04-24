@@ -1,0 +1,184 @@
+/*------estilo para selector UNIVERSAL 
+
+*{
+
+}
+
+---------------------------------------*/
+
+/*---------------------------------------HEADER---------------------------------------*/
+/*--Navegador--*/
+.wrapp{
+    margin: 0;
+}
+
+#contenedor{
+    position: relative;
+    background: linear-gradient(to left, royalblue, white);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.imagen-logo{
+    height: fit-content;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 0.5%;
+    animation-delay: 1.5s;
+}
+
+.animate__animated.animate__shakeX {
+    --animate-duration: 2s;
+  }
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+li{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    color: white;
+    padding: 1em;
+    font-size: large;
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+/*--Fin Navegador--*/
+
+
+/*----------------------------------------BODY----------------------------------------*/
+
+body{
+    margin: 0;
+   
+}
+
+/*-------------HOME----------*/
+.box{
+    background-color: slateblue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    padding: 100%;
+    
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Cantidad y ancho de columnas*/
+    grid-template-rows: 2fr 1fr 3fr; /*Cantidad y ancho de filas*/
+    gap: 10px; /*A nivel de filas y columnas*/
+    margin: 0;
+}
+/*----------- FIN HOME--------*/
+/*---------SUCURSALES---------*/
+
+.sucursales{
+    text-align: center;
+    color:black;
+}
+
+/*--Tabla--*/
+
+.table-wrapp{
+    margin: auto;
+}
+
+.tabla-sucursales, td{
+    margin-top: 5em;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid;
+}
+
+th{
+    background-color:royalblue;
+    color: white;
+}
+
+.first-row{
+    text-align: center;
+    font-weight: bold;
+}
+
+.second-row{
+    text-align: center;
+}
+
+.thirth-row iframe{
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tabla-sucursales a{
+    color:blue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*--Fin Tabla--*/
+/*------------- FIN SUCURSALES--------*/
+/*------------------REGISTRO----------*/
+
+select{
+    color:black;
+}
+
+select:invalid{
+    opacity: 0.7;
+}
+
+/*----------------END-REGISTRO-------------*/
+.end-registro-gracias{
+    font-weight: bold;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.end-registro-revisa{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------FIN REGISTROS----------*/
+/*-------------------------------------FOOTER-----------------------------------------------------*/
+
+.foot-wrapp{
+    min-width: 100%;
+    position: relative;
+}
+.pie{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color:royalblue;
+    text-align: center;
+    color: white;
+}
+
+/*--Redes Sociales--*/
+i{
+    margin-top: 10px;
+    color: white;
+}
+
+/*--Fin Redes Sociales--*/

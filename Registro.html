@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5dd0236cb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/AY BEBIDAS.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>AY-Bedidas</title>
+</head>
+<body>
+     <div class="wrapp">
+        <div id="contenedor">
+            <img src="img/AY BEBIDAS.png" class="imagen-logo">
+            <ul>
+                <li><a href="/index.html"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-beer-mug-empty" style="padding-right: 10px;"></i>Produtos</a></li>
+                <li><a href="/Registro.html"><i class="fa-solid fa-address-card" style="padding-right: 10px;"></i>Registro</a></li>
+                <li><a href="/Contacto.html"><i class="fa-solid fa-headset" style="padding-right: 10px;"></i></i>Contacto</a></li>
+            </ul>
+        </div>
+     </div>
+
+     <h2 aling="left">Formulario de Registro</h2>
+        <table border="1">
+            <form action="/endregistro.html" method="get">
+                <tr>
+                    <td>Nombre:</td>
+                    <td>
+                        <input type="text" id="nombre" size="30" maxlength="500" placeholder="Ingresa tu nombre aquí">
+                        <label for="nombre"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apellido:</td>
+                    <td>
+                        <input type="text" id="apellido" size="30" maxlength="500" placeholder="Ingresa tu apellido aquí">
+                        <label for="apellido"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mail:</td>
+                    <td>
+                        <input type="text" id="mail" size="30" maxlength="500" placeholder="Ingresa tu email aquí">
+                        <label for="mail"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dirección:</td>
+                    <td>
+                        <input type="text" id="direc" size="30" maxlength="500" placeholder="Ingresa tu dirección aquí">
+                        <label for="direc"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Provincia:</td>
+                    <td>
+                        <label for="provincias"></label>
+                        <select name="provincias" id="provincias" size="" required>
+                            <option value="">Selecciona una Opción</option>                            
+                            <option value="item2">Buenos Aires</option>
+                            <option value="item3">Ciudad Autónoma de Buenos Aires</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Chubut</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoza</option>
+                            <option>Misiones</option>
+                            <option>Neuquén</option>
+                            <option>Río Negro</option>
+                            <option>Salta</option>
+                            <option>San Juan</option>
+                            <option>San Luis</option>
+                            <option>Santa Cruz</option>
+                            <option>Santa Fe</option>
+                            <option>Santiago del Estero</option>
+                            <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                            <option>Tucumán</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha de Nacimiento:</td>
+                    <td>
+                        <input type="date" id="cumpleaños">
+                        <label for="cumpleaños"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Genero:</td>
+                    <td>
+                        <input type="radio" name="opcion" Value="Femenino">F
+                        <input type="radio" name="opcion" Value="Masculino">M
+                        <input type="radio" name="opcion" Value="Otro">Otro
+                    </td>
+                </tr>
+                <tr>
+                    <td>Estudios</td>
+                    <td>
+                        <input type="checkbox" name="opcion" Value="Básico">Básico
+                        <input type="checkbox" name="opcion" Value="Bachillerato">Bachillerato
+                        <input type="checkbox" name="opcion" Value="Terciario">Terciario
+                        <input type="checkbox" name="opcion" Value="Universitario">Universitario
+                        <input type="checkbox" name="opcion" Value="Postgrado">Post-Grado
+                        <input type="checkbox" name="opcion" Value="Doctorado">Doctorado
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="enviar" id="enviar">
+                        <input type="reset" name="borrar" id="borrar">  
+                    </td> 
+                </tr>
+            </form>
+        </table>
+
+
+
+
+
+
+     <footer class="pie">
+        <div class="redes-pie">
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div>
+            Derechos reservados @Yoly
+        </div> 
+    </footer>     
+</body>
+</html>
