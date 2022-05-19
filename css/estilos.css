@@ -88,6 +88,7 @@ body{
 
 .caja4{
     grid-area: aside;
+    height: 20rem;
 }
 
 .caja5{
@@ -100,7 +101,6 @@ body{
     color: white;
     text-align: center;
     border: 1px solid black;
-    bottom: 0;
 }
 
 /*----------- FIN HOME--------*/
