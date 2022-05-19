@@ -67,23 +67,42 @@ body{
 }
 
 /*-------------HOME----------*/
-.box{
+.wrapp-products{
+    height: 100%;
+    display:grid;
+    grid-template-areas:'header header header' 
+    'menu main aside' 'footer footer footer';
+}
+
+.caja1{
+    grid-area: header;
+}
+
+.caja2{
+    grid-area: menu;
+}
+
+.caja3{
+    grid-area: main;
+}
+
+.caja4{
+    grid-area: aside;
+}
+
+.caja5{
+    grid-area: footer;
+}
+
+
+.wrapp-products > div{
     background-color: slateblue;
-    padding: 10px;
     color: white;
     text-align: center;
     border: 1px solid black;
-    padding: 100%;
-    
+    bottom: 0;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /*Cantidad y ancho de columnas*/
-    grid-template-rows: 2fr 1fr 3fr; /*Cantidad y ancho de filas*/
-    gap: 10px; /*A nivel de filas y columnas*/
-    margin: 0;
-}
 /*----------- FIN HOME--------*/
 /*---------SUCURSALES---------*/
 
@@ -94,8 +113,10 @@ body{
 
 /*--Tabla--*/
 
-.table-wrapp{
+.tabla-wrapp{
+    overflow-x: auto;
     margin: auto;
+    padding-bottom: 10%;
 }
 
 .tabla-sucursales, td{
@@ -138,6 +159,11 @@ th{
 /*--Fin Tabla--*/
 /*------------- FIN SUCURSALES--------*/
 /*------------------REGISTRO----------*/
+.formulario{
+    overflow-x: auto;
+    margin-right: 0;
+    width: 100%;
+}
 
 select{
     color:black;
@@ -147,6 +173,9 @@ select:invalid{
     opacity: 0.7;
 }
 
+.botones-registro{
+    border: none;
+}
 /*----------------END-REGISTRO-------------*/
 .end-registro-gracias{
     font-weight: bold;
@@ -160,12 +189,10 @@ select:invalid{
 }
 
 /*---------FIN REGISTROS----------*/
+
 /*-------------------------------------FOOTER-----------------------------------------------------*/
 
-.foot-wrapp{
-    min-width: 100%;
-    position: relative;
-}
+
 .pie{
     width: 100%;
     position: fixed;

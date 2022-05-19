@@ -1,1 +1,3 @@
-console.log("hola este es mi primer js")
+fc = ((a) => a + 100)
+
+console.log( fc(10) )

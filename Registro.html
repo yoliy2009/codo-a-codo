@@ -24,11 +24,13 @@
      </div>
 
      <h2 aling="left">Formulario de Registro</h2>
-        <table border="1">
+        <div class="formulario">
+        <table class="tabla-registro" border="1">
             <form action="/endregistro.html" method="get">
+                <tbody class="cuerpo-tabla">
                 <tr>
                     <td>Nombre:</td>
-                    <td>
+                    <td style="width:100px">
                         <input type="text" id="nombre" size="30" maxlength="500" placeholder="Ingresa tu nombre aquí">
                         <label for="nombre"></label>
                     </td>
@@ -114,17 +116,17 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="botones-registro">
                         <input type="submit" name="enviar" id="enviar">
                         <input type="reset" name="borrar" id="borrar">  
                     </td> 
                 </tr>
+            </tbody>
             </form>
         </table>
+        </div>
 
-
-
-
+    
 
 
      <footer class="pie">
