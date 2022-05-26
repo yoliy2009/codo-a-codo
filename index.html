@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/app.js"></script>
-    <script src="https://kit.fontawesome.com/5dd0236cb0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="img/AY BEBIDAS.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>AY-Bedidas</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type= "text/javascript" src="js/app.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5dd0236cb0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/AY BEBIDAS.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <title>AY-Bedidas</title>
+    </head>
 <body>
     <header>
-        <div class="wrapp">
             <div id="contenedor">
                 <a href="/index.html"><img src="img/AY BEBIDAS.png" class="imagen-logo animate__animated animate__shakeX"></a>
-                <ul>
-                    <li><a href="/index.html"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a></li>
-                    <li><a href="#"><i class="fa-solid fa-beer-mug-empty" style="padding-right: 10px;"></i>Produtos</a></li>
-                    <li><a href="/Registro.html"><i class="fa-solid fa-address-card" style="padding-right: 10px;"></i>Registro</a></li>
-                    <li><a href="/Contacto.html"><i class="fa-solid fa-headset" style="padding-right: 10px;"></i></i>Contacto</a></li>
+                <div class="nav">
+                    <label class="etiqueta-nav" for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle">
+                </div>  
+                <ul class="menu">
+                    <li class="menu-lista"><a href="/index.html" class="redirigir"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a></li>
+                    <!--<li><a href="#"><i class="fa-solid fa-beer-mug-empty" style="padding-right: 10px;"></i>Produtos</a></li>-->
+                    <li class="menu-lista"><a href="/Registro.html" class="redirigir"><i class="fa-solid fa-address-card" style="padding-right: 10px;"></i>Registro</a></li>
+                    <li class="menu-lista"><a href="/Contacto.html" class="redirigir"><i class="fa-solid fa-headset" style="padding-right: 10px;"></i></i>Contacto</a></li>
                 </ul>
             </div>
-        </div>
     </header>
 
-   
-        <div class="wrapp-products">
-                <div class="caja1" >caja 1</div>
-                <div class="caja2">caja 2</div>
-                <div class="caja3">caja 3</div>
-                <div class="caja4" >caja 4</div>
-                <div class="caja5">caja 5</div>                
-        </div>
-  
+        <section class="productos-ventas">
+            <h1 class="titulo-principal">PRECIOS HASTA 45% OFF</h1>
+        <div class="wrapp-products"> 
+            <div class="productos-col">
+                <img src="https://cdn.shopify.com/s/files/1/0254/2947/5433/products/AndesOrigenRubia473ml_192x.png?v=1635342311?nocache=0.23295441456140464" class="producto1" alt="cerveza1">
+                <h3 class="producto-title">Andes Rubia 473ml</h3>
+                <h2 class="producto-precio">$350</h2>
+            </div> 
+            
+            <div class="productos-col">
+                <img src="https://cdn.shopify.com/s/files/1/0254/2947/5433/products/cerveza-andes-origen-roja-473-siempreencasa_1_5b6b4175-544e-453e-9c8c-fd036febd931_192x.png?v=1635357539?nocache=0.8835116661264177" class="producto2" alt="cerveza2">
+                <h3 class="producto-title">Andes Roja 473ml</h3>
+                <h2 class="producto-precio">$350</h2>
+            </div> 
+
+            <div class="productos-col">
+                <img src="https://cdn.shopify.com/s/files/1/0254/2947/5433/products/cerveza-brahma-duki-473-siempreencasa_1_192x.png?v=1643822530?nocache=0.1964328235154993" class="producto3" alt="cerveza3">
+                <h3 class="producto-title">Brahma 473ml</h3>
+                <h2 class="producto-precio">$300</h2>
+            </div> 
+
+            <div class="btn-productos">
+                <a class="btn-ver-productos" href="#">Ver todos los productos</a>
+            </div>
+        </div>        
+    </section>
+
+      
     
 
     <footer class="pie">

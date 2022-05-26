@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5dd0236cb0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="img/AY BEBIDAS.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>AY-Bedidas</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type= "text/javascript" src="js/app.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5dd0236cb0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/AY BEBIDAS.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <title>AY-Bedidas</title>
+    </head>
 <body>
     <header>
-        <div class="wrapp">
-            <div id="contenedor">
-                <a href="/index.html"><img src="img/AY BEBIDAS.png" class="imagen-logo animate__animated animate__shakeX"></a>
-                <ul>
-                    <li><a href="/index.html"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a></li>
-                    <li><a href="#"><i class="fa-solid fa-beer-mug-empty" style="padding-right: 10px;"></i>Produtos</a></li>
-                    <li><a href="/Registro.html"><i class="fa-solid fa-address-card" style="padding-right: 10px;"></i>Registro</a></li>
-                    <li><a href="/Contacto.html"><i class="fa-solid fa-headset" style="padding-right: 10px;"></i></i>Contacto</a></li>
-                </ul>
-            </div>
+        <div id="contenedor">
+            <a href="/index.html"><img src="img/AY BEBIDAS.png" class="imagen-logo animate__animated animate__shakeX"></a>
+            <div class="nav">
+                <label class="etiqueta-nav" for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+            </div>  
+            <ul class="menu">
+                <li class="menu-lista"><a href="/index.html" class="redirigir"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a></li>
+                <!--<li><a href="#"><i class="fa-solid fa-beer-mug-empty" style="padding-right: 10px;"></i>Produtos</a></li>-->
+                <li class="menu-lista"><a href="/Registro.html" class="redirigir"><i class="fa-solid fa-address-card" style="padding-right: 10px;"></i>Registro</a></li>
+                <li class="menu-lista"><a href="/Contacto.html" class="redirigir"><i class="fa-solid fa-headset" style="padding-right: 10px;"></i></i>Contacto</a></li>
+            </ul>
         </div>
-    </header>
+</header>
 
-     <div>
+     <!--<div>
         <h2 class="sucursales">SUCURSALES</h2>
-    </div>
+    </div>-->
 
     <div class="tabla-wrapp">
      <table class="tabla-sucursales">
@@ -37,9 +43,9 @@
              <th>Recoleta</th>
          </tr>
          <tr class="second-row">
-             <td><a href="https://www.google.com/maps/place/Avenida+Francisco+Beir%C3%B3+%26+Berm%C3%BAdez,+C1417+CABA/@-34.6111305,-58.52259,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb7da0b4f2033:0x75afcfe6283a8a6!8m2!3d-34.6111305!4d-58.5204013" target="_blank" class="vd">Avenida Francisco Beiró & Bermúdez</a></td>
-             <td><a href="https://www.google.com/maps/place/French+%26+Azcu%C3%A9naga,+C1115+CABA/@-34.5914881,-58.4002992,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c55d67f9:0x6ef28bd769390607!8m2!3d-34.5914881!4d-58.3981105" target="_blank" class="rc">French y Azcuenaga</a></td>
-             <td><a href="https://www.google.com/maps/place/Av.+Jos%C3%A9+Mar%C3%ADa+Moreno+%26+Av.+Directorio,+C1424+CABA/@-34.6280151,-58.4360084,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca4c055c96bd:0xf2e47852ecf71633!8m2!3d-34.6280151!4d-58.4338197" target="_blank" class="cb">Jose María Moreno y Directorio</a></td>
+             <td class="devoto"><a href="https://www.google.com/maps/place/Avenida+Francisco+Beir%C3%B3+%26+Berm%C3%BAdez,+C1417+CABA/@-34.6111305,-58.52259,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb7da0b4f2033:0x75afcfe6283a8a6!8m2!3d-34.6111305!4d-58.5204013" target="_blank" class="vd">Avenida Francisco Beiró & Bermúdez</a></td>
+             <td class="caballito"><a href="https://www.google.com/maps/place/French+%26+Azcu%C3%A9naga,+C1115+CABA/@-34.5914881,-58.4002992,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c55d67f9:0x6ef28bd769390607!8m2!3d-34.5914881!4d-58.3981105" target="_blank" class="rc">French y Azcuenaga</a></td>
+             <td class="recoleta"><a href="https://www.google.com/maps/place/Av.+Jos%C3%A9+Mar%C3%ADa+Moreno+%26+Av.+Directorio,+C1424+CABA/@-34.6280151,-58.4360084,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca4c055c96bd:0xf2e47852ecf71633!8m2!3d-34.6280151!4d-58.4338197" target="_blank" class="cb">Jose María Moreno y Directorio</a></td>
              
          </tr>
          <tr class="thirth-row">
@@ -49,6 +55,10 @@
          </tr>
      </table>
 
+    </div>
+
+    <div class="telf">
+        <p>Teléfono: +54-11000000   /  e-mail: yolycordova2@gmail.com</p>
     </div>
 
  

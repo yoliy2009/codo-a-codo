@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5dd0236cb0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="img/AY BEBIDAS.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <title>AY-Bedidas</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type= "text/javascript" src="js/app.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5dd0236cb0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/AY BEBIDAS.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <title>AY-Bedidas</title>
+    </head>
 <body>
     <header>
-        <div class="wrapp">
-            <div id="contenedor">
-                <a href="/index.html"><img src="img/AY BEBIDAS.png" class="imagen-logo animate__animated animate__shakeX"></a>
-                <ul>
-                    <li><a href="/index.html"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a></li>
-                    <li><a href="#"><i class="fa-solid fa-beer-mug-empty" style="padding-right: 10px;"></i>Produtos</a></li>
-                    <li><a href="/Registro.html"><i class="fa-solid fa-address-card" style="padding-right: 10px;"></i>Registro</a></li>
-                    <li><a href="/Contacto.html"><i class="fa-solid fa-headset" style="padding-right: 10px;"></i></i>Contacto</a></li>
-                </ul>
-            </div>
+        <div id="contenedor">
+            <a href="/index.html"><img src="img/AY BEBIDAS.png" class="imagen-logo animate__animated animate__shakeX"></a>
+            <div class="nav">
+                <label class="etiqueta-nav" for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+            </div>  
+            <ul class="menu">
+                <li class="menu-lista"><a href="/index.html" class="redirigir"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a></li>
+                <!--<li><a href="#"><i class="fa-solid fa-beer-mug-empty" style="padding-right: 10px;"></i>Produtos</a></li>-->
+                <li class="menu-lista"><a href="/Registro.html" class="redirigir"><i class="fa-solid fa-address-card" style="padding-right: 10px;"></i>Registro</a></li>
+                <li class="menu-lista"><a href="/Contacto.html" class="redirigir"><i class="fa-solid fa-headset" style="padding-right: 10px;"></i></i>Contacto</a></li>
+            </ul>
         </div>
-    </header>
+</header>
 
      
 
         <div class="registro">
             <div class="registro-wrapper">
                 <div class="form_container">
-                  <form name="form">
+                  <form name="form" id="formulario" method="get">
                     <div class="heading">
-                        <h2>Registrate</h2>
+                        <h2>Registrate en nuestra web</h2>
                      </div>
 
                     <div class="form_wrap fullname">
                         <div class="form_item">
                             <label>Nombre</label>
-                            <input type="text"> 
+                            <input type="text" name="nombre" id="fnombre"> 
                         </div>
                                             
                         <div class="form_item">
                             <label>Apellido</label>
-                            <input type="text">
+                            <input type="text" name="apellido" id="fapllido">
                         </div>
                       
                     </div>
@@ -51,14 +57,14 @@
                     <div class="form_wrap">
                         <div class="form_item">
                           <label>Email</label>
-                          <input type="text">
+                          <input type="text" name="correo" id="fcorreo">
                         </div>
                     </div>
 
                     <div class="form_wrap">
                         <div class="form_item">
                           <label>Teléfono</label>
-                          <input type="text">
+                          <input type="text" name="tlf" id="ftlf" >
                        </div>
                     </div>
 
@@ -67,33 +73,57 @@
                         <div class="form_item">
                           <label>País</label>
                              <select name="paises">
-                            <option>London</option>
-                            <option>Paris</option>
-                            <option>Moscow</option>
-                            <option>Tokyo</option>
+                                <option>Selecciona un país</option>
+                                <option>Argentina</option>
                              </select>
                         </div>
                       
                       
                         <div class="form_item">
                           <label>Provincias</label>
-                             <select name="Provincias">
-                            <option>India</option>
-                            <option>Canada</option>
-                            <option>Germany</option>
-                            <option>Australia</option>
+                             <select name="provincias">
+                                <option>Selecciona una provincia</option>
+                                <option value="Buenos Aires">Buenos Aires</option>
+                                <option value="Buenos Aires Capital">Ciudad Autónoma de Buenos Aires</option>
+                                <option value="Catamarca">Catamarca</option>
+                                <option value="Chaco">Chaco</option>
+                                <option value="Chubut">Chubut</option>
+                                <option value="Cordoba">Cordoba</option>
+                                <option value="Corrientes">Corrientes</option>
+                                <option value="Entre Rios">Entre Rios</option>
+                                <option value="Formosa">Formosa</option>
+                                <option value="Jujuy">Jujuy</option>
+                                <option value="La Pampa">La Pampa</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Misiones">Misiones</option>
+                                <option value="Neuquen">Neuquen</option>
+                                <option value="Rio Negro">Rio Negro</option>
+                                <option value="Salta">Salta</option>
+                                <option value="San Juan">San Juan</option>
+                                <option value="San Luis">San Luis</option>
+                                <option value="Santa Cruz">Santa Cruz</option>
+                                <option value="Santa Fe">Santa Fe</option>
+                                <option value="Santiago del Estero">Santiago del Estero</option>
+                                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                <option value="Tucuman">Tucuman</option>
                              </select>
                        </div>
-                      
+                     
+                    </div>
+
+                    <div class="form_item">
+                        <input type="checkbox" name="terminos" id="fterminos">
+                        Soy Mayor de 18 años (términos y condiciones)
                     </div>
 
                     <div class="btn">
-                        <input type="submit" value="Registrarse">
+                        <input type="submit" value="Registrarse" onclick ="btn_enviar()">
                     </div>
                
-                 </form>
+                </form>
                 </div>
-               </div>
+            </div>
         </div>
 
 
