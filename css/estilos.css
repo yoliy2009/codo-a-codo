@@ -7,22 +7,6 @@
 
 /*---------------------------------------HEADER---------------------------------------*/
 /*--Navegador--*/
-.nav{
-    text-align: right;
-}
-
-.etiqueta-nav{
-    margin: 0 40px 0 0;
-    font-size: 30px;
-    line-height: 70px;
-    display: none;
-    width: 30px;
-    float: right;
-}
-
-#toggle{
-    display: none;
-}
 
 .wrapp{
     margin: 0 30px 0 0;
@@ -370,7 +354,7 @@ i{
 /*--Fin Redes Sociales--*/
 
 /*----MEDIA QUERY-----*/
-@media (max-width: 881px){
+@media (max-width: 1000px){
     .btn-productos{
             font-size: smaller;
     }
@@ -378,12 +362,10 @@ i{
         font-size: medium;
     }
     .wrapp-products{
+        padding-bottom: 10px;
         margin-top: 1%;
     }
 
-    .titulo-principal{
-        padding-top: 0;
-    }
     }
 
 
@@ -400,6 +382,21 @@ i{
     text-align: center;
     flex-direction: column;
 }
+
+.producto1,.producto2,.producto3{
+    width: auto;
+    height: 100px;
+}
+
+.menu-lista{
+    font-size: 14px;
+}
+
+.titulo-principal{
+    padding-top: 2px;
+    font-size: small;
+}
+
 }
 
 @media (max-width: 519px){
@@ -414,10 +411,21 @@ i{
 
 .producto1,.producto2,.producto3{
     width: auto;
+    height: 100px;
+}
+#logo{
+    width: 75px;
+    height: 75px;
+
+}
+
+.menu{
+    display: contents;
+    text-align: center;
 }
 }
 
-@media (max-width: 200px){
+@media (max-width: 270px){
     .btn-productos{
         width: auto;
         font-size: auto;
@@ -425,28 +433,16 @@ i{
     .producto-precio, .producto-title{
         font-size: 1px;
     }
-    }
 
-@media only screen and (max-width: 500px){
-    .etiqueta-nav{
-        display: block;
-        cursor: pointer;
-    }
-    .menu{
-        text-align: left;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    #logo{
         display: none;
     }
 
-    .menu-lista{
-        display: flex;
-        flex-direction: column;
+    .form_item label{
+        font-size: smaller;
     }
 
-    #toggle:checked + .menu {
-        display:inline-flex;
-        flex-direction: column;
+    #prov-selec option{
+        font-size: 10px;
     }
 }
