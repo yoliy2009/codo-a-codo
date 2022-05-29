@@ -42,12 +42,12 @@
                     <div class="form_wrap fullname">
                         <div class="form_item">
                             <label>Nombre</label>
-                            <input type="text" name="nombre" id="fnombre"> 
+                            <input type="text" name="nombre" id="fnombre" required> 
                         </div>
                                             
                         <div class="form_item">
                             <label>Apellido</label>
-                            <input type="text" name="apellido" id="fapllido">
+                            <input type="text" name="apellido" id="fapllido" required>
                         </div>
                       
                     </div>
@@ -55,14 +55,14 @@
                     <div class="form_wrap">
                         <div class="form_item">
                           <label>Email</label>
-                          <input type="text" name="correo" id="fcorreo">
+                          <input type="text" name="correo" id="fcorreo" required>
                         </div>
                     </div>
 
                     <div class="form_wrap">
                         <div class="form_item">
                           <label>Teléfono</label>
-                          <input type="text" name="tlf" id="ftlf" >
+                          <input type="text" name="tlf" id="ftlf" required>
                        </div>
                     </div>
 
@@ -70,17 +70,17 @@
 
                         <div class="form_item">
                           <label>País</label>
-                             <select name="paises">
-                                <option>Selecciona un país</option>
-                                <option>Argentina</option>
+                             <select name="paises" required>
+                                <option value="">Selecciona un país</option>
+                                <option value="1">Argentina</option>
                              </select>
                         </div>
                       
                       
                         <div class="form_item">
                           <label>Provincias</label>
-                             <select id="prov-selec" name="provincias">
-                                <option>Selecciona una provincia</option>
+                             <select id="prov-selec" name="provincias" required>
+                                <option value="">Selecciona una provincia</option>
                                 <option value="Buenos Aires">Buenos Aires</option>
                                 <option value="Buenos Aires Capital">Ciudad Autónoma de Buenos Aires</option>
                                 <option value="Catamarca">Catamarca</option>
@@ -111,7 +111,7 @@
                     </div>
 
                     <div class="form_item">
-                        <input type="checkbox" name="terminos" id="fterminos">
+                        <input type="checkbox" name="terminos" id="fterminos" required>
                         Soy Mayor de 18 años (términos y condiciones)
                     </div>
 
