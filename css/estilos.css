@@ -8,10 +8,6 @@
 /*---------------------------------------HEADER---------------------------------------*/
 /*--Navegador--*/
 
-.wrapp{
-    margin: 0 30px 0 0;
-}
-
 #contenedor{
     position: relative;
     background: linear-gradient(to left, royalblue, white);
@@ -20,7 +16,7 @@
     justify-content: space-between;
     margin:0;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .imagen-logo{
@@ -34,6 +30,15 @@
 .animate__animated.animate__shakeX {
     --animate-duration: 2s;
   }
+
+.hamburguesa{
+    display: none;
+    float: right;
+}
+
+#toggle{
+    display: none;
+}
 
 .menu{
     display: flex;
@@ -55,11 +60,12 @@
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 600;
 }
-
-.redirigir{
+.menu a{
     text-decoration: none;
-    color:white
+    color: white;
 }
+
+
 /*--Fin Navegador--*/
 
 
@@ -423,6 +429,32 @@ i{
     display: contents;
     text-align: center;
 }
+}
+
+@media only screen and (max-width:500px){
+    .hamburguesa{
+        display:block;
+        cursor: pointer;  
+    }
+
+    .menu{
+       text-align: center;
+       width: 100%;
+       display: none;
+       background: linear-gradient(to left, royalblue, white);
+    }
+
+    .menu-lista{
+        display: block;
+        border-bottom: 1px solid #EBEBEA;
+        margin: 0;
+        background: linear-gradient(to left, royalblue, white);
+    }
+
+    #toggle:checked + .menu{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 270px){
