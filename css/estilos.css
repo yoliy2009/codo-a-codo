@@ -433,6 +433,7 @@ i{
 
 @media only screen and (max-width:500px){
     .hamburguesa{
+        margin:0 30px;
         display:block;
         cursor: pointer;  
     }
